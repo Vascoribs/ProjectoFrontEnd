@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
+
 
 
 export default function Header(){
@@ -11,10 +13,9 @@ export default function Header(){
                 <img src="C:\xampp\htdocs\projectofrontend\projecto-front-end\logo_onwest\120x85\OnwestPrancheta 1 cópia.png" alt="OnWest Track Club" />
             </h1>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
+                <li><NavLink to="/aboutus">About US</NavLink></li>
+                <li><NavLink to="/shop">Shop</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>    
                     <select value={ country } onChange={ event => setCountry(event.target.value) }>
                         <option value="Portugal">Portugal</option>

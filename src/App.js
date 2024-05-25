@@ -4,7 +4,7 @@ import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import Main from './components/Main';
+import Home from './components/Home';
 import Newsletter from './components/Newsletter';
 import Shop from './components/Shop';
 
@@ -14,11 +14,11 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="aboutus" element={<AboutUs />} />
-        <Route path="shop" element={<Shop />} />
-        <Route path="contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Main />
       <Newsletter />
       <Footer />
     </div>

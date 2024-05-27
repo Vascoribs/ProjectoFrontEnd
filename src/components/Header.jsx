@@ -15,11 +15,12 @@ export default function Header(){
                     </NavLink>
                 </h1>
                 <ul>
-                    <li><NavLink to="/aboutus">About US</NavLink></li>
-                    <li><NavLink to="/shop">Shop</NavLink></li>
-                    <li><NavLink to="/contact">Contact</NavLink></li>
+                    <li><NavLink className="navbarLink" to="/aboutus">About US</NavLink></li>
+                    <li><NavLink className="navbarLink" to="/shop">Shop</NavLink></li>
+                    <li><NavLink className="navbarLink" to="/contact">Contact</NavLink></li>
                 </ul>
-            </div>    
+            </div>
+            <div className="topRight">    
                 <select value={ country } onChange={ event => setCountry(event.target.value) }>
                         <option value="Portugal">Portugal</option>
                         <option value="Spain">Spain</option>
@@ -29,7 +30,6 @@ export default function Header(){
                         <option value="UK">UK</option>
                         <option value="USA">USA</option>
                 </select>
-            <div className="topRight">
                 <ul>
                     <li>
                         <button type="button" aria-label="Search">

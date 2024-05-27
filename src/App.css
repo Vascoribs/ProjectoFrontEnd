@@ -10,12 +10,26 @@ nav{
 .topLeft{
     display:flex;
     padding: 10px;
+    margin-right: 85vh;
 }
 
 .topLeft ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+}
+
+.topLeft ul li {
+    margin: 7vh
+}
+
+.navbarLink {
+    text-decoration: none;
+    color: darkgrey
+} 
+
+.navbarLink:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .topRight {
@@ -24,5 +38,49 @@ nav{
 
 .topRight ul{
     display: flex;
-    justify-content: end;
+}
+
+.topRight select, button {
+    border-radius: 4px;
+    background-color: white;
+    margin: 3vh;
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.5rem;
+}
+
+.newsLetter {
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.newsLetter form input{
+    border-radius: 2px;
+}
+
+footer {
+    display: flex;
+    margin-top: 5vw;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer p strong {
+    font-weight: bold;
+}
+
+footer ul {
+    display: flex;
+    margin-left: 130vh;
+}
+
+footer ul li {
+    margin: 5px
 }

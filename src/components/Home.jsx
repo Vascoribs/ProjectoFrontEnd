@@ -1,7 +1,7 @@
 export default function Home(){
     return (
         <main>
-            <div>
+            <div className="join">
                 <h2>Join OnWest</h2>
                 <img src="" alt="" />
             </div>

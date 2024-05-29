@@ -7,15 +7,15 @@ export default function Header(){
     const [country, setCountry] = useState("Portugal")
 
     return(
-        <nav>
+        <nav> 
+            <h1>
+                <NavLink to="/">
+                    <img src="/img/logo_onwest/120x85/OnwestPrancheta1.png" alt="OnWest Track Club" />
+                </NavLink>
+            </h1>
             <div className="topLeft">
-                <h1>
-                    <NavLink to="/">
-                        <img src="/img/logo_onwest/120x85/OnwestPrancheta1.png" alt="OnWest Track Club" />
-                    </NavLink>
-                </h1>
-                <ul>
-                    <li><NavLink className="navbarLink" to="/aboutus">About US</NavLink></li>
+               <ul>
+                    <li><NavLink className="navbarLink" to="/aboutus">About Us</NavLink></li>
                     <li><NavLink className="navbarLink" to="/shop">Shop</NavLink></li>
                     <li><NavLink className="navbarLink" to="/contact">Contact</NavLink></li>
                 </ul>

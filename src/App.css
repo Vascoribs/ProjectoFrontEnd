@@ -1,10 +1,16 @@
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Avenir'
 }
 
 nav{
     display: flex;
     align-items: center;
+    outline: 1px solid darkgray;
+}
+
+nav h1 {
+    justify-content: center;
+    outline: 1px solid green;
 }
 
 .topLeft{
@@ -24,7 +30,7 @@ nav{
 
 .navbarLink {
     text-decoration: none;
-    color: darkgrey
+    color: #333
 } 
 
 .navbarLink:hover {
@@ -50,8 +56,18 @@ main {
     text-align: center;
 }
 
+main .join {
+    font-weight: bold;
+}
+
 main h2 {
     font-size: 1.5rem;
+}
+
+.aboutUs p {
+    margin: 0 auto;
+    max-width: 75vh;
+    text-align: center;
 }
 
 .newsLetter {

@@ -5,11 +5,11 @@ body{
 nav{
     display: flex;
     align-items: center;
-    outline: 1px solid darkgray;
+    outline: 1px solid blue;
+    border-bottom: 1px solid darkgray;
 }
 
 nav h1 {
-    justify-content: center;
     outline: 1px solid green;
 }
 
@@ -17,6 +17,7 @@ nav h1 {
     display:flex;
     padding: 10px;
     margin-right: 85vh;
+    outline: 1px solid red;
 }
 
 .topLeft ul {
@@ -39,6 +40,7 @@ nav h1 {
 }
 
 .topRight {
+    outline: 1px solid purple;
     display: flex;
 }
 
@@ -52,12 +54,17 @@ nav h1 {
     margin: 3vh;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 main {
     text-align: center;
 }
 
 main .join {
     font-weight: bold;
+    margin: 10px auto;
 }
 
 main h2 {
@@ -65,8 +72,19 @@ main h2 {
 }
 
 .aboutUs p {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 75vh;
+    text-align: center;
+}
+
+.contactUs h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.contactUs form {
+    margin-top: 10px;
     text-align: center;
 }
 

@@ -8,18 +8,18 @@ export default function Header(){
 
     return(
         <nav> 
-            <h1>
-                <NavLink to="/">
-                    <img src="/img/logo_onwest/120x85/OnwestPrancheta1.png" alt="OnWest Track Club" />
-                </NavLink>
-            </h1>
             <div className="topLeft">
                <ul>
                     <li><NavLink className="navbarLink" to="/aboutus">About Us</NavLink></li>
                     <li><NavLink className="navbarLink" to="/shop">Shop</NavLink></li>
                     <li><NavLink className="navbarLink" to="/contact">Contact</NavLink></li>
                 </ul>
-            </div>
+            </div> 
+            <h1>
+                <NavLink className="h1" to="/">
+                    <img src="/img/logo_onwest/120x85/OnwestPrancheta1.png" alt="OnWest Track Club" />
+                </NavLink>
+            </h1>
             <div className="topRight">    
                 <select value={ country } onChange={ event => setCountry(event.target.value) }>
                         <option value="Portugal">Portugal</option>

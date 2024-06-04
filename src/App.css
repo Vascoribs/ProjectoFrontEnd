@@ -88,13 +88,22 @@ main h2 {
     text-align: center;
 }
 
+.contactUs form div input {
+    border-radius: 3px;
+}
+
+.contactUs p {
+    font-size: 0.6rem;
+    font-style: italic;
+}
+
 .newsLetter {
     text-align: center;
     margin-top: 5vw;
 }
 
 .newsLetter form input{
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 footer {

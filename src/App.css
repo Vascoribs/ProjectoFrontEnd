@@ -3,20 +3,27 @@ body{
 }
 
 nav{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     outline: 1px solid blue;
     border-bottom: 1px solid darkgray;
 }
 
-nav h1 {
+h1 {
+    position: absolute;
     outline: 1px solid green;
 }
 
+h1 img {
+    max-width: 12vh;
+}
+
 .topLeft{
-    display:flex;
+    display: flex;
     padding: 10px;
-    margin-right: 85vh;
     outline: 1px solid red;
 }
 
@@ -26,7 +33,7 @@ nav h1 {
 }
 
 .topLeft ul li {
-    margin: 7vh
+    margin: 3vw
 }
 
 .navbarLink {
@@ -46,12 +53,12 @@ nav h1 {
 
 .topRight ul{
     display: flex;
+    font-family: 'Avenir'
 }
 
 .topRight select, button {
     border-radius: 4px;
     background-color: white;
-    margin: 3vh;
 }
 
 button:hover {
@@ -60,6 +67,37 @@ button:hover {
 
 main {
     text-align: center;
+}
+
+.join {
+    position: relative;
+}
+.join img {
+    max-width: 1200px;
+}
+
+.join h2 {
+    font-size: 2.0rem;
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 100px;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+main figure img {
+    margin-top: 10vh;
+    max-width: 10vw;
+    max-height: 25vh;
+}
+
+main figcaption {
+    font-size: 0.9rem;
 }
 
 main .join {
@@ -71,9 +109,18 @@ main h2 {
     font-size: 1.5rem;
 }
 
+main .trending {
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+h2, h3{
+    font-weight: bold;
+}
+
 .aboutUs p {
-    margin: 10px auto;
-    max-width: 75vh;
+    margin: 30px auto;
+    max-width: 40vw;
     text-align: center;
 }
 
@@ -99,7 +146,7 @@ main h2 {
 
 .newsLetter {
     text-align: center;
-    margin-top: 5vw;
+    margin-top: 100px;
 }
 
 .newsLetter form input{
@@ -107,8 +154,10 @@ main h2 {
 }
 
 footer {
+    max-width: 1200px;
+    margin: 100px auto;
     display: flex;
-    margin-top: 5vw;
+    justify-content: space-between;
 }
 
 footer p {
@@ -121,9 +170,8 @@ footer p strong {
 
 footer ul {
     display: flex;
-    margin-left: 130vh;
 }
 
-footer ul li {
-    margin: 5px
+footer ul li{
+    margin: 5px;
 }

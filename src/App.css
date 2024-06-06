@@ -4,17 +4,19 @@ body{
 
 nav{
     max-width: 1200px;
+    min-height: 125px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    position: relative;
     align-items: center;
-    outline: 1px solid blue;
     border-bottom: 1px solid darkgray;
 }
 
 h1 {
     position: absolute;
-    outline: 1px solid green;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 h1 img {
@@ -22,9 +24,10 @@ h1 img {
 }
 
 .topLeft{
+    position: absolute;
+    left: 1px;
     display: flex;
     padding: 10px;
-    outline: 1px solid red;
 }
 
 .topLeft ul {
@@ -47,13 +50,19 @@ h1 img {
 }
 
 .topRight {
-    outline: 1px solid purple;
+    min-width: 300px;
+    min-height: 25px;
+    position: absolute;
+    right: 1px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .topRight ul{
+    min-width: 80px;
     display: flex;
-    font-family: 'Avenir'
+    justify-content: space-between;
 }
 
 .topRight select, button {
@@ -150,6 +159,7 @@ h2, h3{
 }
 
 .newsLetter form input{
+    margin-top: 10px;
     border-radius: 3px;
 }
 

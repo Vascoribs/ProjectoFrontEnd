@@ -30,7 +30,7 @@ export default function Header(){
                         <option value="UK">UK</option>
                         <option value="USA">USA</option>
                 </select>
-                <ul>
+                <ul className="navButtons">
                     <li>
                         <button type="button" aria-label="Search">
                             <i className="fa-solid fa-magnifying-glass"></i>

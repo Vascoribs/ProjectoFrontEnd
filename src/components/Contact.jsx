@@ -7,8 +7,7 @@ export default function Contact(){
                 <div><input type="text" name="name" placeholder="Full Name"/></div>
                 <div><input type="email" name="email" placeholder="Email *" required/></div>
                 <div><input type="text" name="country" placeholder="Country"/></div>
-                <div><input type="text" name="comments"
-                placeholder="Comment" /></div>
+                <div className="comments"><textarea placeholder="Comment"></textarea></div>
                 <p>* required field</p>
                 <button type="submit">Contact Us</button>
             </form>

@@ -127,8 +127,15 @@ h2, h3{
     font-weight: bold;
 }
 
+.aboutUs {
+    margin-top: 30px;
+}
+
 .aboutUs p {
-    margin: 30px auto;
+    outline: 1px solid red;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: bold;
     max-width: 40vw;
     text-align: center;
 }
@@ -145,12 +152,30 @@ h2, h3{
 }
 
 .contactUs form div input {
+    min-width: 300px;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+
+.contactUs form .comments textarea {
+    resize: none;
+    margin-top: 7px;
+    min-width: 300px;
+    min-height: 80px;
+    font-size: 0.9rem;
+    font-family: 'Avenir';
     border-radius: 3px;
 }
 
 .contactUs p {
     font-size: 0.6rem;
     font-style: italic;
+    margin-top: 3px;
+}
+
+.contactUs button {
+    margin-top: 10px;
+    min-width: 80px;
 }
 
 .newsLetter {
@@ -159,8 +184,14 @@ h2, h3{
 }
 
 .newsLetter form input{
+    min-width: 280px;
     margin-top: 10px;
     border-radius: 3px;
+}
+
+.newsLetter button {
+    margin-left: 10px;
+    min-width: 50px
 }
 
 footer {

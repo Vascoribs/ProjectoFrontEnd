@@ -101,8 +101,21 @@ main ul {
 
 main figure img {
     margin-top: 10vh;
-    max-width: 10vw;
+    width: 10vw;
     max-height: 25vh;
+    background-size: cover;
+}
+
+main .hidden {
+    display: none;
+}
+
+main figure:hover .visible{
+    display:none;
+}
+
+main figure:hover .hidden{
+    display:inline;
 }
 
 main figcaption {
@@ -137,6 +150,7 @@ h2, h3{
     font-weight: bold;
     max-width: 500px;
     text-align: center;
+    
 }
 
 .contactUs h2 {
@@ -198,6 +212,8 @@ footer {
     margin: 100px auto;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid darkgray;
+    padding-top: 20px;
 }
 
 footer p {

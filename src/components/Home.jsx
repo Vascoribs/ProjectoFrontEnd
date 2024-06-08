@@ -3,32 +3,36 @@ export default function Home(){
         <main>
             <div className="join">
                 <h2>Join OnWest</h2>
-                <img src="img/club2.png" alt="" />
+                <img src="/img/club2.png" alt="" />
             </div>
             <div className="trending">
                 <h2>Trending</h2>
-                <ul classname="mainImgs">
+                <ul className="mainImgs">
                     <li>
                         <figure>
-                            <img src="img/cap1.png" alt="Cap" />
+                            <img className="visible" src="/img/cap1.png" alt="" />
+                            <img className="hidden" src="/img/cap2.png" alt="" />      
                             <figcaption>Cap - 25€</figcaption>
                         </figure>
                     </li>
                     <li>
                         <figure>
-                            <img src="img/tanktop1.png" alt="Pro Tank" />
+                            <img className="visible"src="/img/tanktop1.png" alt="" />
+                            <img className="hidden"src="/img/tanktop2.png" alt="" />
                             <figcaption>Pro Tank - 30€</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
-                            <img src="img/shorts1.png" alt="Shorts" />
+                        <figure id="img3">
+                            <img className="visible" src="/img/shorts1.png" alt="" />
+                            <img className="hidden" src="/img/shorts2.png" alt="" />
                             <figcaption>Shorts - 20€</figcaption>
                         </figure>
                     </li>
                     <li>
-                        <figure>
-                            <img src="img/socks1.png" alt="Socks" />
+                        <figure id="img4">
+                            <img className="visible" src="/img/socks1.png" alt="" />
+                            <img className="hidden" src="/img/socks2.png" alt="" />
                             <figcaption>Socks - 10€</figcaption>
                         </figure>
                     </li>

@@ -153,6 +153,24 @@ h2, h3{
     
 }
 
+.shop h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.shop img {
+    width: 10vw;
+    max-height: 25vh;
+}
+
+.shop .shopProducts {
+    max-width: 1200px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: ;
+}
+
 .contactUs h2 {
     margin-top: 10px;
     font-size: 1.5rem;

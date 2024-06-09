@@ -92,6 +92,8 @@ main {
     left: 50%;
     transform: translate(-50%);
     bottom: 100px;
+    border: 3px solid lightgrey;
+    padding: 4px;
 }
 
 main ul {
@@ -101,9 +103,8 @@ main ul {
 
 main figure img {
     margin-top: 10vh;
-    width: 10vw;
-    max-height: 25vh;
-    background-size: cover;
+    width: 216px;
+    height: 270px;
 }
 
 main .hidden {
@@ -120,6 +121,7 @@ main figure:hover .hidden{
 
 main figcaption {
     font-size: 0.9rem;
+    margin-top: 5px;
 }
 
 main .join {
@@ -153,26 +155,46 @@ h2, h3{
     
 }
 
+.shop {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .shop h2 {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .shop img {
-    width: 10vw;
-    max-height: 25vh;
+    width: 216px;
+    height: 270px;
+    margin-top: 40px;
+}  
+
+.shop img:hover{
+    transform: scale(1.1);
+}
+
+.shop figure:hover {
+    text-decoration: underline;
+    cursor: pointer
 }
 
 .shop .shopProducts {
     max-width: 1200px;
-    margin-top: 10px;
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
+.shop figcaption {
+    text-align: center;
+    margin-top: 15px;
 }
 
 .contactUs h2 {
-    margin-top: 10px;
+    margin-top: 30px;
     font-size: 1.5rem;
     text-align: center;
 }

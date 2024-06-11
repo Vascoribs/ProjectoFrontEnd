@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Newsletter from './components/Newsletter';
 import Shop from './components/Shop';
+import Articles from './components/Articles';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/articles/:id" element={<Articles />} />
       </Routes>
       <Newsletter />
       <Footer />

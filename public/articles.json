@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Baby Sweatshirt",
+        "description": "30€",
+        "photo": "/img/babysweatshirt1.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Cap",
+        "description": "25€",
+        "photo": "/img/cap1.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Jacket",
+        "description": "45€",
+        "photo": "/img/jacket1.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Long Sleeve",
+        "description": "35€",
+        "photo": "/img/longsleeve1.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Pro Tank",
+        "description": "30€",
+        "photo": "/img/tanktop1.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Shorts",
+        "description": "20€",
+        "photo": "/img/shorts1.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Socks",
+        "description": "10€",
+        "photo": "/img/socks1.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "T-Shirt",
+        "description": "25€",
+        "photo": "/img/tshirt1.jpeg"
+    }
+]

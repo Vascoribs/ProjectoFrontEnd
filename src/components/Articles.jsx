@@ -36,12 +36,13 @@ export default function Articles() {
                     <h2>{ article.name }</h2>
                         <div className="articleDisplay">
                             <img src={article.photo} alt="" />
-                            <div className="articleDetails"></div>
-                            <p> {article.name} </p>
-                            <p> {article.description} </p> 
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" max="99"/>
-                            <button type="submit" formMethod="">Add to Cart</button>
+                            <div className="articleDetails">
+                                <p> {article.name} </p>
+                                <ol>{article.description}</ol> 
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="99"/>
+                                <button type="submit" formMethod="">Add to Cart</button>  
+                            </div>   
                         </div>
                 </div>
             }

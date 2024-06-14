@@ -198,10 +198,14 @@ h2, h3{
     margin-top: 15px;
 }
 
+.articlesPage {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .articlesPage img {
     height: 432px;
-    margin-top: 60px;
-    margin-left: 200px;
+    display: inline;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
@@ -211,20 +215,36 @@ h2, h3{
     font-size: 1.5rem;
 }
 
-.articlesPage .articleDisplay {
+.articleDisplay {
+    margin-top: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     outline: 1px solid red;
 }
 
 .articleDetails {
-    display: grid;
-    grid-template-columns: auto;
+    outline: 1px solid green;
+    display: block;
+    max-width: 250px;
+    height: 250px;
 }
 
-.articlesPage p {
-    margin-top: 100px;
-    outline: 1px solid green;
+.articlesDetails p {
+
+}
+
+.articleDetails ol {
+
+}
+
+.articleDetails input {
+
+}
+
+.articleDetails button {
+    
 }
 
 .contactUs h2 {

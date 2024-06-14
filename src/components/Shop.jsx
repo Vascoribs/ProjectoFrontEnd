@@ -20,11 +20,11 @@ export default function Shop() {
                     <section key={ article.id }>
                         <li>
                             <figure>
-                                <NavLink to={"/articles" + article.id}>
+                                <NavLink to={"/Articles/" + article.id}>
                                     <img src={ article.photo} alt="" />
                                 </NavLink>
-                                <NavLink to={"/articles" + article.id}>
-                                    <figcaption>{ article.description }</figcaption>
+                                <NavLink to={"/Articles/" + article.id}>
+                                    <figcaption>{ article.name }</figcaption>
                                 </NavLink>
                             </figure>
                         </li>

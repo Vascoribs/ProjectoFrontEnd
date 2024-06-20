@@ -221,30 +221,36 @@ h2, h3{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    outline: 1px solid red;
 }
 
 .articleDetails {
-    outline: 1px solid green;
     display: block;
     max-width: 250px;
     height: 250px;
 }
 
-.articlesDetails p {
-
+.articleDetails p {
+    margin-top: 5px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .articleDetails ol {
+    margin-top: 30px;
+}
 
+.articleDetails li {
+    font-style: italic;
+    line-height: 19px;
+}
+
+.articleDetails form {
+    margin-top: 30px;
 }
 
 .articleDetails input {
-
-}
-
-.articleDetails button {
-    
+    width: 40px;
+    border: none;
 }
 
 .contactUs h2 {

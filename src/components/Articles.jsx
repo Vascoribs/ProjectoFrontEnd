@@ -13,6 +13,7 @@ export default function Articles() {
         .then(articles => {
 
             const articleFound = articles.find( item => item.id == params.id );
+            
 
             if(articleFound) {
                 setArticle(articleFound);
@@ -31,17 +32,25 @@ export default function Articles() {
     return (
         
         <main>
-            {
+            { article &&
                 <div className="articlesPage"> 
                     <h2>{ article.name }</h2>
                         <div className="articleDisplay">
                             <img src={article.photo} alt="" />
                             <div className="articleDetails">
                                 <p> {article.name} </p>
-                                <ol>{article.description}</ol> 
-                                <label for="quantity">Quantity:</label>
-                                <input type="number" id="quantity" name="quantity" min="1" max="99"/>
-                                <button type="submit" formMethod="">Add to Cart</button>  
+                                    <ol>
+                                        {article.features && article.features.map((feature, index) => (
+                                                <li key={index}>
+                                                    {feature}
+                                                </li>
+                                        ))}
+                                    </ol> 
+                                <form type="submit" method="POST">
+                                    <label for="quantity">Quantity:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="99"/>
+                                    <button type="submit">Add to Cart</button>
+                                </form>  
                             </div>   
                         </div>
                 </div>

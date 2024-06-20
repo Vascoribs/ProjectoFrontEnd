@@ -32,11 +32,6 @@ export default function Header(){
                 </select>
                 <ul className="navButtons">
                     <li>
-                        <button type="button" aria-label="Search">
-                            <i className="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </li>
-                    <li>
                         <button type="button" aria-label="Shopping Cart">
                             <i className="fa-solid fa-cart-shopping" ></i>
                         </button>

@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { CartContext } from "../contexts/CartContext";
 
 export default function Articles() {
+
+    const { addToCart} = useContext(CartContext);
 
     const params = useParams();
     const [article, setArticle] = useState({});
@@ -46,11 +49,9 @@ export default function Articles() {
                                                 </li>
                                         ))}
                                     </ol> 
-                                <form type="submit" method="POST">
                                     <label for="quantity">Quantity:</label>
                                     <input type="number" id="quantity" name="quantity" min="1" max="99"/>
-                                    <button type="submit">Add to Cart</button>
-                                </form>  
+                                    <button type="button" onClick={()=>addToCart(article)}>Add to Cart</button>
                             </div>   
                         </div>
                 </div>

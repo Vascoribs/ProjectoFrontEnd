@@ -1,9 +1,11 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import { NavLink } from "react-router-dom"
+import { CartContext } from "../contexts/CartContext";
 
 
 export default function Header(){
     
+    const {cart} = useContext(CartContext);
     const [country, setCountry] = useState("Portugal")
 
     return(
@@ -32,9 +34,12 @@ export default function Header(){
                 </select>
                 <ul className="navButtons">
                     <li>
-                        <button type="button" aria-label="Shopping Cart">
-                            <i className="fa-solid fa-cart-shopping" ></i>
+                        <NavLink className="shoppingCartLink" to="/shoppingcart">
+                        <button type="button" name="shopCart" aria-label="Shopping Cart">
+                                <i className="fa-solid fa-cart-shopping" ></i>
                         </button>
+                        <div>{cart.length}</div>
+                        </NavLink>
                     </li>
                 </ul>
             </div>

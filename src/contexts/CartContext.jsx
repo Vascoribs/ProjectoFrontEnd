@@ -6,24 +6,74 @@ export function CartContextProvider(props) {
 
     const [cart,setCart] = useState([]);
 
-        function addToCart(article) {
-            console.log("funciona", article);
-            setCart(prevState => {
-                const cartCopy = [...prevState, article];
-                console.log(cartCopy)
+    function addToCart(article, quantity) {
+        setCart(prevState => {
+            const cartCopy = [...prevState];
 
-                const repeated = cartCopy.find(item => item.id == article.id);
+            const existingProduct = cartCopy.findIndex(item => item.id == article.id);
 
-                if(!repeated) {
-                    cartCopy.push(article);
-                }
+            if(existingProduct < 0) {
+                article.quantity = parseInt(quantity);
+                cartCopy.push(article);
+            }
+            else{
+                cartCopy[existingProduct].quantity = parseInt(quantity)
+            }
+            return cartCopy;
+        });
+    }
 
-                return cartCopy;
-            });
-        }
+    function subtractArticle(article, quantity) {
+        setCart(prevState => {
+            const cartCopy = [...prevState];
+
+            const existingProduct = cartCopy.findIndex(item => item.id == article.id);
+
+            if(existingProduct < 0) {
+                article.quantity = article.parseInt(quantity--);
+                cartCopy.push(article);
+            }
+            else{
+                cartCopy[existingProduct].quantity = parseInt(quantity)
+            }
+            return cartCopy;
+        })
+    }
+    
+    function addArticle(article, quantity) {
+        setCart(prevState => {
+            const cartCopy = [...prevState];
+
+            const existingProduct = cartCopy.findIndex(item => item.id == article.id);
+
+            if(existingProduct < 0) {
+                article.quantity = parseInt(quantity)++;
+            }
+            else{
+            
+            }
+            return cartCopy;
+        })
+    }
+    
+    function removeArticle(article, quantity) {
+        setCart(prevState => {
+            const cartCopy = [...prevState];
+
+            const existingProduct = cartCopy.findIndex(item => item.id == article.id);
+
+            if(existingProduct < 0) {
+                
+            }
+            else{
+                
+            }
+            return cartCopy;
+        })
+    }
 
     return (
-        <CartContext.Provider value={{addToCart, cart}}>{ props.children }
+        <CartContext.Provider value={{addToCart, subtractArticle, addArticle, removeArticle, cart}}>{ props.children }
         </CartContext.Provider>
     );
 }

@@ -297,6 +297,11 @@ h2, h3{
     text-align: center;
 }
 
+.shoppingCart img {
+    width: 173px;
+    height: 216px;
+}
+
 .newsLetter {
     text-align: center;
     margin-top: 100px;

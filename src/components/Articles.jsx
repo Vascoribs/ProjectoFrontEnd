@@ -4,10 +4,11 @@ import { CartContext } from "../contexts/CartContext";
 
 export default function Articles() {
 
-    const { addToCart} = useContext(CartContext);
+    const { addToCart } = useContext(CartContext);
 
     const params = useParams();
     const [article, setArticle] = useState({});
+    const [quantity, setQuantity] = useState(1)
 
     useEffect(() => {
 
@@ -49,9 +50,9 @@ export default function Articles() {
                                                 </li>
                                         ))}
                                     </ol> 
-                                    <label for="quantity">Quantity:</label>
-                                    <input type="number" id="quantity" name="quantity" min="1" max="99"/>
-                                    <button type="button" onClick={()=>addToCart(article)}>Add to Cart</button>
+                                    <label htmlFor="quantity">Quantity:</label>
+                                    <input type="number" value={ quantity } id="quantity" name="quantity" min="1" max="99" onChange={(event) => setQuantity(event.target.value)}/>
+                                    <button type="button" onClick={()=>addToCart(article, quantity)}>Add to Cart</button>
                             </div>   
                         </div>
                 </div>

@@ -23,51 +23,48 @@ export function CartContextProvider(props) {
         });
     }
 
-    function subtractArticle(article, quantity) {
+    function subtractArticle(article) {
         setCart(prevState => {
             const cartCopy = [...prevState];
 
             const existingProduct = cartCopy.findIndex(item => item.id == article.id);
 
-            if(existingProduct < 0) {
-                article.quantity = article.parseInt(quantity--);
-                cartCopy.push(article);
+            if(existingProduct >= 0) {
+                cartCopy[existingProduct].quantity--
+
+                if(cartCopy[existingProduct].quantity <= 0) {
+                    cartCopy.splice(existingProduct, 1)
+                }
             }
-            else{
-                cartCopy[existingProduct].quantity = parseInt(quantity)
-            }
+           
             return cartCopy;
         })
     }
     
-    function addArticle(article, quantity) {
+    function addArticle(article) {
         setCart(prevState => {
             const cartCopy = [...prevState];
 
             const existingProduct = cartCopy.findIndex(item => item.id == article.id);
 
-            if(existingProduct < 0) {
-                article.quantity = parseInt(quantity)++;
+            if(existingProduct <= 0 && cartCopy[existingProduct].quantity < article.stock) {
+                cartCopy[existingProduct].quantity++;
             }
-            else{
-            
-            }
+        
             return cartCopy;
         })
     }
     
-    function removeArticle(article, quantity) {
+    function removeArticle(article) {
         setCart(prevState => {
             const cartCopy = [...prevState];
 
             const existingProduct = cartCopy.findIndex(item => item.id == article.id);
 
-            if(existingProduct < 0) {
-                
+            if(existingProduct >= 0) {
+                cartCopy.splice(existingProduct, 1)
             }
-            else{
-                
-            }
+           
             return cartCopy;
         })
     }

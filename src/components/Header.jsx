@@ -35,7 +35,7 @@ export default function Header(){
                 <ul className="navButtons">
                     <li>
                         <NavLink className="shoppingCartLink" to="/shoppingcart">
-                        <button type="button" name="shopCart" aria-label="Shopping Cart">
+                        <button type="button" name="cartBtn" aria-label="Shopping Cart">
                                 <i className="fa-solid fa-cart-shopping" ></i>
                         </button>
                         <div>{cart.length}</div>

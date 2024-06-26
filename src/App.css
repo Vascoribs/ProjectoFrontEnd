@@ -244,13 +244,10 @@ h2, h3{
     line-height: 19px;
 }
 
-.articleDetails form {
-    margin-top: 30px;
-}
-
 .articleDetails input {
     width: 40px;
     border: none;
+    margin-top: 30px;
 }
 
 .contactUs h2 {

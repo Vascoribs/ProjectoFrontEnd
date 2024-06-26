@@ -51,7 +51,7 @@ export default function Articles() {
                                         ))}
                                     </ol> 
                                     <label htmlFor="quantity">Quantity:</label>
-                                    <input type="number" value={ quantity } id="quantity" name="quantity" min="1" max="99" onChange={(event) => setQuantity(event.target.value)}/>
+                                    <input type="number" value={ quantity } id="quantity" name="quantity" min="1" max={article.stock} onChange={(event) => setQuantity(event.target.value)}/>
                                     <button type="button" onClick={()=>addToCart(article, quantity)}>Add to Cart</button>
                             </div>   
                         </div>

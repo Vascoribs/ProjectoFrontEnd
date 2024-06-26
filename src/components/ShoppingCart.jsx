@@ -7,6 +7,7 @@ export default function ShoppingCart() {
     const {cart} = useContext(CartContext);
     const { subtractArticle } = useContext(CartContext);
     const { addArticle } = useContext(CartContext);
+    const { removeArticle } = useContext(CartContext);
     
     return (
         <div className="shoppingCart">
@@ -22,6 +23,7 @@ export default function ShoppingCart() {
                     <div> Quantity:{article.quantity} </div>
                     <button type="button" onClick={()=>subtractArticle(article)}>-</button>
                     <button type="button" onClick={()=>addArticle(article)}>+</button>
+                    <button type="button" onClick={()=>removeArticle(article)}>Remove</button>
                 </section>
             ))}
             </div> 

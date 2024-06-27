@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "title": "Baby Sweatshirt",
         "name": "Baby Sweatshirt - 30€",
         "description": "Baby Cool Fit, 280GSM Natural Raw sweatshirt 85% Organic Cotton, 15% Polyester",
         "features": ["Baby Cool Fit", "280GSM Natural Raw Sweatshirt", "85% Organic Cotton", "15% Polyester"],
@@ -10,6 +11,7 @@
     },
     {
         "id": 2,
+        "title": "Cap",
         "name": "Cap - 25€",
         "description": "Five panel cap with adjustable plastic fastener, Light weight, 100% recycled quick dry nylon body with 100% recycled polyester mesh",
         "features": ["Five panel cap with adjustable plastic fastener", "Light weight", "100% recycled quick dry nylon body with 100% recycled polyester mesh"],
@@ -19,6 +21,7 @@
     },
     {
         "id": 3,
+        "title": "Jacket",
         "name": "Jacket - 45€",
         "description": "Regular Fit, Light weight 80GSM, 100% nylon body & sleeve lining",
         "features": ["Regular Fit", "Light weight 80GSM", "100% nylon body & sleeve lining"],
@@ -28,6 +31,7 @@
     },
     {
         "id": 4,
+        "title": "Long Sleeve",
         "name": "Long Sleeve - 35€",
         "description": "Regular Fit, 350GSM, 85% Organic Cotton 15% Polyester - Recycled",
         "features": ["Regular Fit", "350GSM", "85% Organic Cotton", "15% Polyester - Recycled"],
@@ -37,6 +41,7 @@
     },
     {
         "id": 5,
+        "title": "Pro Tank",
         "name": "Pro Tank - 30€",
         "description": "Regular Fit, 120GSM, 60% Recycled Polyester 40% Cotton",
         "features": ["Regular Fit", "120GSM", "60% Recycled Polyester 40% Cotton"],
@@ -46,6 +51,7 @@
     },
     {
         "id": 6,
+        "title": "Shorts",
         "name": "Shorts - 20€",
         "description": "Elastic and Confortable, Rear pocket, One Size - Medium",
         "features": ["Elastic and Confortable", "Rear pocket", "One Size - Medium"],
@@ -55,6 +61,7 @@
     },
     {
         "id": 7,
+        "title": "Socks",
         "name": "Socks - 10€",
         "description": "Confort Fit, One Size 38-42, 80% Cotton 17%Polyamid 3% Spandex",
         "features": ["Confort Fit", "One Size 38-42", "80% Cotton", "17%Polyamid", "3% Spandex"],
@@ -64,6 +71,7 @@
     },
     {
         "id": 8,
+        "title": "T-Shirt",
         "name": "T-Shirt - 25€",
         "description": "Regular Fit, 220GSM, 100% Organic Cotton",
         "features": ["Regular Fit", "220GSM", "100% Organic Cotton"],

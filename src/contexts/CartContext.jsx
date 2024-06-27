@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
 
@@ -46,8 +46,7 @@ export function CartContextProvider(props) {
             const cartCopy = [...prevState];
 
             const existingProduct = cartCopy.findIndex(item => item.id == article.id);
-
-            if(existingProduct <= 0 && cartCopy[existingProduct].quantity < article.stock) {
+            if(existingProduct >= 0 && cartCopy[existingProduct].quantity < article.stock) {
                 cartCopy[existingProduct].quantity++;
             }
         
@@ -57,6 +56,7 @@ export function CartContextProvider(props) {
     
     function removeArticle(article) {
         setCart(prevState => {
+
             const cartCopy = [...prevState];
 
             const existingProduct = cartCopy.findIndex(item => item.id == article.id);

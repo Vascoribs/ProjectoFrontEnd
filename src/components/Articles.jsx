@@ -38,7 +38,7 @@ export default function Articles() {
         <main>
             { article &&
                 <div className="articlesPage"> 
-                    <h2>{ article.name }</h2>
+                    <h2>{ article.title }</h2>
                         <div className="articleDisplay">
                             <img src={article.photo} alt="" />
                             <div className="articleDetails">

@@ -38,7 +38,7 @@ export default function Header(){
                         <button type="button" name="cartBtn" aria-label="Shopping Cart">
                                 <i className="fa-solid fa-cart-shopping" ></i>
                         </button>
-                        <div>{cart.length}</div>
+                        <div className="cartLength">{cart.length}</div>
                         </NavLink>
                     </li>
                 </ul>

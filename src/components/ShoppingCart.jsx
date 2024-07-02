@@ -23,7 +23,7 @@ export default function ShoppingCart() {
     return (
         <div className="shoppingCart">
             <h2>Shopping Cart</h2>
-            <div>
+            <div className="shoppingArticles">
             {cart.map(article => (
                 <section key={ article.id }>
                     <h3>{ article.name }</h3>

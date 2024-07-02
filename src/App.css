@@ -57,7 +57,6 @@ h1 img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    outline: 1px solid blue;
 }
 
 .topRight ul{
@@ -68,11 +67,17 @@ h1 img {
     align-items: center;
 }
 
-.topRight select, button {
+.topRight select, .topRight button {
     height: 25px;
-    border-radius: 4px;
     background-color: white;
     position: relative;
+    border: none;
+}
+
+button {
+    border-radius: 4px;
+    background-color: white;
+    border: none;
 }
 
 button:hover {
@@ -83,11 +88,13 @@ button:hover {
     font-size: 0.8rem;
     position: absolute;
     bottom: 0;
-    left: 212px;
+    left: 207px;
     color: white;
     background-color: black;
     border-radius: 5px;
 }
+
+/* HomePage */
 
 main {
     text-align: center;
@@ -157,6 +164,8 @@ h2, h3{
     font-weight: bold;
 }
 
+/* About Us Page */
+
 .aboutUs {
     margin-top: 30px;
 }
@@ -169,6 +178,8 @@ h2, h3{
     text-align: center;
     
 }
+
+/* Shop Page */
 
 .shop {
     max-width: 1200px;
@@ -212,6 +223,8 @@ h2, h3{
     text-align: center;
     margin-top: 15px;
 }
+
+/* Articles Page */
 
 .articlesPage {
     max-width: 1200px;
@@ -265,6 +278,8 @@ h2, h3{
     margin-top: 30px;
 }
 
+/* Contact Us Page */
+
 .contactUs h2 {
     margin-top: 30px;
     font-size: 1.5rem;
@@ -303,6 +318,20 @@ h2, h3{
     min-width: 80px;
 }
 
+/* Shopping Cart Page */
+
+.shoppingCart {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shoppingCart .shoppingArticles {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+}
+
 .shoppingCart h2 {
     margin-top: 30px;
     font-size: 1.5rem;
@@ -313,6 +342,30 @@ h2, h3{
     width: 173px;
     height: 216px;
 }
+
+.shoppingCart h3 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.shoppingCart button {
+    border: 1px solid black
+}
+
+.shoppingCart .shoppingArticles div {
+    text-align: center;
+    margin-top: 3px;
+}
+
+.shoppingCart .grandTotal {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+/* NewsLetter */
 
 .newsLetter {
     text-align: center;
@@ -329,6 +382,8 @@ h2, h3{
     margin-left: 10px;
     min-width: 50px
 }
+
+/* Footer */
 
 footer {
     max-width: 1200px;

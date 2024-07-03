@@ -33,11 +33,13 @@ export default function Header(){
                     <button type="button" name="hamburguerBtn" aria-label="Menu" onClick={()=>openHambMenu()}>
                         <i className="fa-solid fa-bars"></i>
                     </button>
-                        <select>
-                            <option><NavLink className="navbarLink" to="/aboutus">About Us</NavLink></option>
-                            <option><NavLink className="navbarLink" to="/shop">Shop</NavLink></option>
-                            <option><NavLink className="navbarLink" to="/contact">Contact</NavLink></option>
-                        </select>
+                    {isHambMenuOpen &&
+                        <ul>
+                            <li><NavLink className="navbarLink" to="/aboutus">About Us</NavLink></li>
+                            <li><NavLink className="navbarLink" to="/shop">Shop</NavLink></li>
+                            <li><NavLink className="navbarLink" to="/contact">Contact</NavLink></li>
+                        </ul>
+                    }
                 </div>   
                 <div className="topRight">    
                     <select value={ country } onChange={ event => setCountry(event.target.value) }>

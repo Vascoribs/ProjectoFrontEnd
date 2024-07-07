@@ -6,16 +6,27 @@ export default function Newsletter(){
 
     const handleSubmit = (event) => {
         event.preventDefault()   
-        alert("You're ON for all the news from the West")
-        setNewsLetter("")
+        setNewsLetter(event.target.email.value)
     }
+
+
     return(
-        <div className="newsLetter">
-            <h3>Subscribe our Newsletter</h3>
-            <form onSubmit={handleSubmit}>
-                <input type="email" id="Email" placeholder="Email" value={newsLetter} onChange={(event) => setNewsLetter(event.target.value)} required></input>
-                <button type="submit">Subscribe</button>
-            </form>
+        <div className="newsLetterWrapper">
+            {!newsLetter && 
+                <div className="newsLetter">
+                <h3>Subscribe our Newsletter</h3>
+                <form onSubmit={handleSubmit}>
+                    <input type="email" name="email" placeholder="Email" aria-label="Email" onSubmit={(event) => setNewsLetter(event.target.value)} required/>
+                    <button type="submit">Subscribe</button>
+                </form>
+                </div>
+            } 
+            {newsLetter && 
+                <p className="submitOk" role="alert">You're ON for news from the West!</p>
+            }
         </div>
+
+       
+        
     )
 }

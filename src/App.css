@@ -329,6 +329,11 @@ h2, h3{
     min-width: 80px;
 }
 
+.contactUsWrapper .contactUsOk {
+    text-align: center;
+    margin-top: 10vh;
+}
+
 /* Shopping Cart Page */
 
 .shoppingCart {
@@ -393,6 +398,11 @@ h2, h3{
     margin-left: 10px;
     min-width: 50px;
     border: 1px solid #333
+}
+
+.newsLetterWrapper p {
+    text-align: center;
+    margin-top: 10vh;
 }
 
 /* Footer */
